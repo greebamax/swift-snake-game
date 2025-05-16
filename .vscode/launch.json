@@ -1,0 +1,40 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-snake-game}",
+            "name": "Debug swift-snake-game",
+            "program": "${workspaceFolder:swift-snake-game}/.build/debug/swift-snake-game",
+            "preLaunchTask": "swift: Build Debug swift-snake-game"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-snake-game}",
+            "name": "Release swift-snake-game",
+            "program": "${workspaceFolder:swift-snake-game}/.build/release/swift-snake-game",
+            "preLaunchTask": "swift: Build Release swift-snake-game"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-snake-game}/swift-snake-game",
+            "name": "Debug swift-snake-game (swift-snake-game)",
+            "program": "${workspaceFolder:swift-snake-game}/swift-snake-game/.build/debug/swift-snake-game",
+            "preLaunchTask": "swift: Build Debug swift-snake-game (swift-snake-game)"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:swift-snake-game}/swift-snake-game",
+            "name": "Release swift-snake-game (swift-snake-game)",
+            "program": "${workspaceFolder:swift-snake-game}/swift-snake-game/.build/release/swift-snake-game",
+            "preLaunchTask": "swift: Build Release swift-snake-game (swift-snake-game)"
+        }
+    ]
+}
