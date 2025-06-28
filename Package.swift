@@ -5,10 +5,13 @@ import PackageDescription
 
 let package = Package(
     name: "swift-snake-game",
-    targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
-        .executableTarget(
-            name: "swift-snake-game"),
+    dependencies: [
+        .package(url: "https://github.com/STREGAsGate/Raylib.git", branch: "master")
     ],
+    targets: [
+        .executableTarget(
+            name: "swift-snake-game",
+            dependencies: ["Raylib"],
+        )
+    ]
 )
