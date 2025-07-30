@@ -1,17 +1,18 @@
 import Raylib
 
-let LIGHTGRAY: Color = .lightGray
-let BLANK: Color = .blank
-let MAGENTA: Color = .magenta
-let RAYWHITE: Color = .rayWhite
+let screenWidth: Int32 = 800
+let screenHeight: Int32 = 450
 
-Raylib.initWindow(800, 450, "raylib [core] example - basic window")
+Raylib.initWindow(screenWidth, screenHeight, "Swift Snake Game")
+Raylib.setTargetFPS(60)
 
+let game = SnakeGame(screenWidth: screenWidth, screenHeight: screenHeight)
+game.reset()
+
+// Main game loop
 while !Raylib.windowShouldClose {
-    Raylib.beginDrawing()
-    Raylib.clearBackground(RAYWHITE)
-    Raylib.drawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY)
-    Raylib.endDrawing()
+    game.update()
+    game.draw()
 }
 
 Raylib.closeWindow()
